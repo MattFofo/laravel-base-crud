@@ -1,12 +1,11 @@
 @extends('templates.base')
 
-@section('titlePage', 'home')
+@section('titlePage', 'comicTitle')
 
 
 @section('content')
     <div>
-        sono la home
+        <h2>{{ $comic->title }}</h2>
     </div>
 
 @endsection
-

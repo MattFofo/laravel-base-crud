@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use App\Comic;
+
 class ComicsTableSeeder extends Seeder
 {
     /**
@@ -121,5 +123,9 @@ class ComicsTableSeeder extends Seeder
                 "type" => "graphic novel"
             ],
         ];
+
+        foreach ($arrComics as $comicData) {
+            Comic::create($comicData);
+        }
     }
 }
