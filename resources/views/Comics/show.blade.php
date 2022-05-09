@@ -1,6 +1,6 @@
 @extends('templates.base')
 
-@section('titlePage', 'comicTitle')
+@section('titlePage', $comic->title)
 
 
 @section('content')

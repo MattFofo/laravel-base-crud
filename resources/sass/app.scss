@@ -1,1 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform .2s ease-in-out;
+}

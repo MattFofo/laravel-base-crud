@@ -6,17 +6,18 @@
 @section('content')
     <div class="container">
 
-        <div class="row g-3">
+        <div class="row g-4">
             @foreach ($comics as $comic)
-            <div class="col-3">
-                <div class="card h-100">
+            <div class="col-2">
+                <a class="text-decoration-none text-dark" href="{{ route('comics.show', $comic->id) }}">
+                    <div class="card h-100">
+                        <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" class="card-img-top">
 
-                    <h1>
-                        <a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a>
-                    </h1>
-
-                    <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
-                </div>
+                        <h3 class="text-dark">
+                            {{ $comic->title }}
+                        </h3>
+                    </div>
+                </a>
             </div>
 
             @endforeach
