@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+
+.footer-links-bg {
+    background-image: url('../images/footer-bg.jpg');
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    .footer-links {
+        display: flex;
+        justify-content: space-evenly;
+        img {
+            position: relative;
+            bottom: 60px;
+            margin-left: 16rem;
+        }
+    }
+}
+.footer-socials-bg {
+    height: 6rem;
+    background-color: $mainColor;
+}
+.footer-socials {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}

@@ -4,14 +4,26 @@
 
 
 @section('content')
-    <div>
+    <div class="container">
         <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
-        <h2>{{ $comic->title }}</h2>
-        <div>{{ $comic->price }}</div>
-        <div>{{ $comic->series }}</div>
-        <div>{{ $comic->sale_date }}</div>
-        <div>{{ $comic->type }}</div>
-        <p>{{ $comic->description }}</p>
+        <h2 class="py-3">{{ $comic->title }}</h2>
+        <div class="py-1">
+            <span>Price: </span>
+            <span class="fw-bold">{{ $comic->price }} &euro;</span>
+        </div>
+        <div class="py-1">
+            <span>Series: </span>
+            <span class="fw-bold">{{ $comic->series }}</span>
+        </div>
+        <div class="py-1">
+            <span>Sale Date: </span>
+            <span class="fw-bold">{{ $comic->sale_date }}</span>
+        </div>
+        <div class="py-1">
+            <span>Comic Type: </span>
+            <span class="fw-bold">{{ $comic->type }}</span>
+        </div>
+        <p class="py-3">{{ $comic->description }}</p>
     </div>
 
 @endsection
