@@ -13,9 +13,9 @@
                     <div class="card h-100">
                         <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" class="card-img-top">
 
-                        <h3 class="text-dark">
+                        <h4 class="text-dark p-2">
                             {{ $comic->title }}
-                        </h3>
+                        </h4>
                     </div>
                 </a>
             </div>
