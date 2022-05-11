@@ -1,6 +1,7 @@
 @use '../abstracts/variables' as *;
 
 .footer-links-bg {
+    color: whitesmoke;
     background-image: url('/images/footer-bg.jpg');
     background-size: cover;
     height: 400px;
@@ -9,6 +10,9 @@
     .footer-links {
         display: flex;
         justify-content: space-evenly;
+        ul {
+            list-style: none;
+        }
         img {
             position: relative;
             bottom: 60px;

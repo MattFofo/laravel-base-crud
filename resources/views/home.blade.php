@@ -4,8 +4,8 @@
 
 
 @section('content')
-    <div>
-        sono la home
+    <div class="">
+        <img class="img-fluid" src="{{ asset('images/home-bg2.jpg') }}" alt="">
     </div>
 
 @endsection

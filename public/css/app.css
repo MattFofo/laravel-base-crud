@@ -6,6 +6,7 @@
 }
 
 .footer-links-bg {
+  color: whitesmoke;
   background-image: url("/images/footer-bg.jpg");
   background-size: cover;
   height: 400px;
@@ -16,6 +17,10 @@
 .footer-links-bg .footer-links {
   display: flex;
   justify-content: space-evenly;
+}
+
+.footer-links-bg .footer-links ul {
+  list-style: none;
 }
 
 .footer-links-bg .footer-links img {

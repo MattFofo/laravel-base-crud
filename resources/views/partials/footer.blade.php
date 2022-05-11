@@ -1,115 +1,119 @@
-<footer class="pt-5">
+<footer class="">
     <div class="footer-links-bg">
         <div class="container">
-            <div class="footer-links">
-
+            <div class="footer-links py-4">
                 <ul>
-                    <h3>DC COMICS</h3>
                     <li>
-                        <a href="">
-                            link
-                        </a>
+                        <ul>
+                            <h3>DC COMICS</h3>
+                            <li>
+                                <a href="#">
+                                    link
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    link
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    link
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    link
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    link
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    link
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    link
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="">
-                            link
-                        </a>
+                        <ul>
+                            <h3 class="pt-1">SHOP</h3>
+                            <li>
+                                <a href="#">
+                                    link
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    link
+                                </a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            link
-                        </a>
-                    </li>
-
-                    <ul>
-                        <h3>SHOP</h3>
-                        <li>
-                            <a href="">
-                                link
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                link
-                            </a>
-                        </li>
-                    </ul>
                 </ul>
 
                 <ul>
                     <h3>DC</h3>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             link
                         </a>
                     </li>
@@ -150,7 +154,7 @@
     <div class="footer-socials-bg">
         <div class="container h-100">
             <div class="footer-socials">
-                <button>join now</button>
+                <button class="btn btn-dark">join now</button>
                 <div class="socials">
                     <h3>FOLLOW US</h3>
                     <img src="{{ asset('images/footer-facebook.png') }}" alt="facebook-icon">
