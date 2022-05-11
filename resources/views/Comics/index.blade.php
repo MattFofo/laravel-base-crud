@@ -9,7 +9,7 @@
         <div class="row g-4">
             @foreach ($comics as $comic)
             <div class="col-2">
-                <a class="text-decoration-none text-dark" href="{{ route('comics.show', $comic->id) }}">
+                <a class="text-decoration-none text-dark" href="{{ route('comics.show', $comic) }}">
                     <div class="card h-100">
                         <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" class="card-img-top">
 
