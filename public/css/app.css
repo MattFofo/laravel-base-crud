@@ -6,6 +6,7 @@
 }
 
 .footer-links-bg {
+  background-image: url("/images/footer-bg.jpg");
   background-size: cover;
   height: 400px;
   overflow: hidden;
