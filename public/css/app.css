@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.bg-card {
+  background-color: #D2D6DF !important;
+}
+
 .card:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
@@ -45,6 +49,14 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+header {
+  height: 4rem;
+}
+
+main {
+  background-image: url("/images/home-bg2.jpg");
 }
 
 /*!

@@ -1,4 +1,4 @@
-<header class="py-4">
+<header class="my-2">
     <div class="container">
         <nav>
             <ul class="nav nav-pills">

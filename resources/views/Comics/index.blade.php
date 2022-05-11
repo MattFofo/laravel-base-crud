@@ -4,13 +4,14 @@
 
 
 @section('content')
+<main>
     <div class="container">
 
         <div class="row g-4">
             @foreach ($comics as $comic)
             <div class="col-2">
                 <a class="text-decoration-none text-dark" href="{{ route('comics.show', $comic->id) }}">
-                    <div class="card h-100">
+                    <div class="card h-100 bg-card">
                         <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" class="card-img-top">
 
                         <h4 class="text-dark p-2">
@@ -25,6 +26,8 @@
             {{ $comics->links() }}
         </div>
     </div>
+
+</main>
 
 
 @endsection
