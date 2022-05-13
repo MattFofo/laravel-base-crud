@@ -1,13 +1,14 @@
 @extends('templates.base')
 
-@section('titlePage', 'New-Comic')
+@section('titlePage', 'Edit Comic')
 
 
 @section('content')
     <div class="container">
 
-        <form method="POST" action="{{ route('comics.store') }}">
+        <form method="POST" action="{{ route(('comics.update'), $comic) }}">
         @csrf
+        @method('PUT')
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
                 <input type="text" class="form-control" id="title" name="title">
