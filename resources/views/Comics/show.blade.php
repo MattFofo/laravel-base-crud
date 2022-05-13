@@ -24,6 +24,8 @@
             <span class="fw-bold">{{ $comic->type }}</span>
         </div>
         <p class="py-3">{{ $comic->description }}</p>
+
+        <a class="btn btn-dark" href="{{ route('comics.edit', $comic) }}">EDIT</a>
     </div>
 
 @endsection
