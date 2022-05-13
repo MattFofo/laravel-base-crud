@@ -87,9 +87,24 @@ class ComicsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+        $request->validate([
+            'title' => 'required|unique:comics|max:100',
+            'description' => 'required',
+            'thumb' => 'required|url|max:250',
+            'price' => 'numeric|min:0|max:5000',
+            'series' => 'required|max:100',
+            'sale_date' => 'required|date',
+            'type' => 'required|max:60'
+
+        ]);
+
+        $formData = $request->all();
+
+        $comic->update($formData);
+
+        return redirect()->route('comics.index');
     }
 
     /**
