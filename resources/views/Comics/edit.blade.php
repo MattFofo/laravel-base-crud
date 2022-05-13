@@ -60,6 +60,8 @@
             @enderror
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+
+        <a class="btn btn-dark" href="{{ url()->previous() }}">BACK</a>
     </div>
 
 @endsection

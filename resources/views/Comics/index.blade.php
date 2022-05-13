@@ -18,6 +18,14 @@
                             {{ $comic->title }}
                         </h4>
                         <a class="btn btn-dark" href="{{ route('comics.edit', $comic) }}">EDIT</a>
+
+                        <form class="d-flex" action="{{ route('comics.destroy', $comic) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+
+                            <button class="btn btn-warning" type="submit" value="DELETE">DELETE</button>
+                        </form>
+
                     </div>
                 </a>
 
