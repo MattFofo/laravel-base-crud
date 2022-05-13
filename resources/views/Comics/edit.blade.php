@@ -18,7 +18,7 @@
             @enderror
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <input type="text" class="form-control" id="description" name="description" value="{{ $comic->description }}">
+                <textarea class="form-control" id="description" name="description">{{ $comic->description }}</textarea>
             </div>
             @error('description')
                 <div class="alert alert-danger">{{ $message }}</div>
