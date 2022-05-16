@@ -59,8 +59,15 @@
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
             <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
 
+            {{-- DELETE --}}
+            <form class="d-flex my-2" action="{{ route('comics.destroy', $comic) }}" method="POST">
+                @csrf
+                @method('DELETE')
+
+                <button class="btn btn-warning" type="submit" value="DELETE">DELETE</button>
+            </form>
+        </form>
         <a class="btn btn-dark" href="{{ url()->previous() }}">BACK</a>
     </div>
 
