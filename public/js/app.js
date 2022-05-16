@@ -19378,7 +19378,19 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); //HTML elements
+
+
+var eleConfirmDelete = document.getElementById('confirm-delete');
+var eleNotDelete = document.getElementById('not-delete');
+var eleOverlayDeleteAlert = document.querySelector('.overlay-delete-alert'); //delete confirm
+
+eleConfirmDelete.addEventListener('click', function () {
+  eleOverlayDeleteAlert.classList.toggle('invisible');
+});
+eleNotDelete.addEventListener('click', function () {
+  eleOverlayDeleteAlert.classList.toggle('invisible');
+});
 
 /***/ }),
 
