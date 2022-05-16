@@ -60,15 +60,30 @@
             @enderror
             <button type="submit" class="btn btn-primary">Submit</button>
 
+
+
+
+        </form>
+        <button id="confirm-delete" class="btn btn-warning">DELETE</button>
+        <a class="btn btn-dark" href="{{ url()->previous() }}">BACK</a>
+    </div>
+
+    {{-- form  --}}
+    <div class="overlay-delete-alert invisible">
+        <div class="content-delete-alert">
+            <h2>Wanna delete?</h2>
             {{-- DELETE --}}
             <form class="d-flex my-2" action="{{ route('comics.destroy', $comic) }}" method="POST">
                 @csrf
                 @method('DELETE')
 
-                <button class="btn btn-warning" type="submit" value="DELETE">DELETE</button>
+                <button class="btn btn-danger" type="submit" value="DELETE">YES, DELETE IT</button>
+
+                <button id="not-delete" class="btn btn-success" type="button">NO, KEEP IT</button>
             </form>
-        </form>
-        <a class="btn btn-dark" href="{{ url()->previous() }}">BACK</a>
+        </div>
+
+
     </div>
 
 @endsection

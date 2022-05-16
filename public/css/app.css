@@ -9,6 +9,29 @@
   transition: transform 0.2s ease-in-out;
 }
 
+.overlay-delete-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-delete-alert {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.2rem;
+  border-radius: 6px;
+  height: 350px;
+  width: 350px;
+  background-color: beige;
+}
+
 .footer-links-bg {
   color: whitesmoke;
   background-image: url("/images/footer-bg.jpg");
