@@ -7,17 +7,16 @@ const eleNotDelete = document.getElementById('not-delete');
 const eleOverlayDeleteAlert = document.querySelector('.overlay-delete-alert');
 
 //delete confirm
-
 function toggleVisibility(element) {
     element.classList.toggle('invisible');
 }
 
 
-eleConfirmDelete.addEventListener('click', () => {
+eleConfirmDelete.addEventListener('click', function () {
     toggleVisibility(eleOverlayDeleteAlert);
 })
 
-eleNotDelete.addEventListener('click', () => {
+eleNotDelete.addEventListener('click', function () {
     toggleVisibility(eleOverlayDeleteAlert);
 })
 
