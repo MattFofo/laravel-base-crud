@@ -4,10 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Validation\Rule;
+
 use App\Comic;
 
 class ComicsController extends Controller
 {
+
+    protected $validationRules = [
+        'title' => 'required|unique:comics|max:100',
+        'description' => 'required',
+        'thumb' => 'required|url|max:250',
+        'price' => 'numeric|min:0|max:5000',
+        'series' => 'required|max:100',
+        'sale_date' => 'required|date',
+        'type' => 'required|max:60'
+    ];
+
+
     /**
      * Display a listing of the resource.
      *
@@ -38,16 +52,7 @@ class ComicsController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'title' => 'required|unique:comics|max:100',
-            'description' => 'required',
-            'thumb' => 'required|url|max:250',
-            'price' => 'numeric|min:0|max:5000',
-            'series' => 'required|max:100',
-            'sale_date' => 'required|date',
-            'type' => 'required|max:60'
-
-        ]);
+        $request->validate($this->validationRules);
 
         $formData = $request->all();
 
@@ -89,16 +94,13 @@ class ComicsController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        $request->validate([
-            'title' => 'required|unique:comics|max:100',
-            'description' => 'required',
-            'thumb' => 'required|url|max:250',
-            'price' => 'numeric|min:0|max:5000',
-            'series' => 'required|max:100',
-            'sale_date' => 'required|date',
-            'type' => 'required|max:60'
+        $this->validationRules['title'] = [
+            'required',
+            Rule::unique('comics')->ignore($comic),
+            'max:100'
+        ];
 
-        ]);
+        $request->validate($this->validationRules);
 
         $formData = $request->all();
 
